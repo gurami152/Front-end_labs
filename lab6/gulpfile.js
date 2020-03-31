@@ -14,6 +14,11 @@ gulp.task('jade', function() {
         .pipe(gulp.dest('builds/development')); // указываем gulp куда положить скомпилированные HTML файлы
 });
 
+var scssFiles = [
+    './src/code/styles/*.scss',
+    './src/code/styles/*.sass'
+]
+
 function watch(){
     browserSync.init({
         server: {
