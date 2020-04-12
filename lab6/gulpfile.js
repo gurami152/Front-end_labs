@@ -26,10 +26,19 @@ function watch(){
         }
     });
     // следить за sass файлами
-    gulp.watch('./src/templates/sass/**/*.sass',sass);
+    gulp.watch('./src/templates/sass/**/*.sass',styles);
 
     // При изминении HTML запустить обновление страницы
     gulp.watch("./*.html").on('change', browserSync.reload);
 }
+
+function styles(){
+    return gulp.src(scssFiles)
+    .pipe(sourcemaps.init())
+    .pipe(sass())
+    .pipe(sourcemaps.write('./'))
+    .pipe(gulp.dest('./build/css'))
+}
+
 
 gulp.task('watch',watch);
