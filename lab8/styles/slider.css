@@ -12,6 +12,8 @@ li img{
     width: 230px;
     height: 130px;
     display:block;
+    border: 4px solid;
+     border-radius: 10px;
 }
 
 .buttons img{
@@ -20,13 +22,17 @@ li img{
 }
 
 .slider{
-    width: 730px;
+    width: 725px;
     overflow: hidden;
     margin:0 auto;
 }
 
 #slider_photos{
-    width: 9999px
-    
+    width: 9999px;
+    position: relative;
+    left:-40px;
 }
 
+button{
+    background-color:#F6F69C;
+  }
