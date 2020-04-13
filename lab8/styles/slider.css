@@ -1,0 +1,32 @@
+.buttons{
+    display:flex;
+    justify-content: space-between;
+    width:50%;
+    margin: 15px auto
+}
+li{
+    display: inline-block;
+}
+
+li img{
+    width: 230px;
+    height: 130px;
+    display:block;
+}
+
+.buttons img{
+    height: 40px;
+    border: none;
+}
+
+.slider{
+    width: 730px;
+    overflow: hidden;
+    margin:0 auto;
+}
+
+#slider_photos{
+    width: 9999px
+    
+}
+

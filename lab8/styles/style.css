@@ -35,7 +35,7 @@ nav{
     font-size: 17px;
 }
 
-#HomeButton, #PhotoButton, #RozkladButton, #NewsButton, #InstagramButton, #YoutubeButton{
+#HomeButton, #PhotoButton, #RozkladButton, #NewsButton, #InstagramButton, #YoutubeButton ,#SliderButton{
     display:inline-block;
     vertical-align: top;
     height: 20px;
@@ -107,6 +107,10 @@ nav a {
 }
 #YoutubeButton:hover{
     border-bottom-color: green;
+}
+
+#SliderButton:hover{
+    border-bottom-color: rgb(90, 9, 90);
 }
 
 #Footer a:hover,nav a:hover{
