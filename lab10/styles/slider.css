@@ -1,0 +1,20 @@
+.tab_item img{
+    width: 230px;
+    height: 130px;
+}
+
+.tab{
+    width: 150px;
+    height: 130px;
+    border: 2px solid #23398e;
+    padding:0 40px;
+    background-color: #050505;
+    color: white;
+}
+.tabs{
+    margin-bottom: 15px;
+}
+.tab:hover{
+    background-color:white;
+    color: #050505;
+}

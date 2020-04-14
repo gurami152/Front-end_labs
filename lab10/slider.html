@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" href="\node_modules\normalize.css\normalize.css">
+        <link rel="stylesheet" href="styles/lightbox.min.css"/>
+	    <link rel="stylesheet" href="styles/colorbox.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/slider.css">
+        <script src="scripts/jquery.js"></script>
+        <script src="scripts/lightbox-plus-jquery.min.js"></script>
+        <script src="scripts/jquery.colorbox.js"></script>
+        <script src="scripts/drebezov_slider.js"></script>
+        <title>Фотоальбом</title>
+    </head>
+    <body>
+        <div id="Header">
+            <h1 id="HeaderTitle">
+                Личная страница (блог) Дребезова Дениса
+            </h1>
+            <nav>
+                <a class="LeftSide" id="HomeButton" href="index.html"><img src="images/navigation/icons8_home_64px.png"></a>
+                <a class="LeftSide" id="RozkladButton" href="rozklad.html">Моё расписание</a>
+                <a class="LeftSide"  id="PhotoButton" href="photo.html">Фотоальбом</a>
+                <a class="LeftSide" id="NewsButton"href="news.html">Последние новости</a>
+                <a class="LeftSide" id="now" id="SliderButton"href="slider.html">Фото-слайдер</a>
+                <a class="RightSide" id="InstagramButton" href="https://www.instagram.com/gurami152/"><img src="images/navigation/icons8_instagram_64px.png"></a>
+                <a class="RightSide" id="YoutubeButton"href="https://www.youtube.com/channel/UCvbJ3qay8xegavJNuUaFVNw?view_as=subscriber"><img src="images/navigation/icons8_youtube_64px.png"></a>
+            </nav>
+        </div>
+        <div id="Main">
+            <a href="#" title="Вернуться к началу" class="topbutton">^Наверх</a>
+            <div class="owl-carousel">
+                <div class="anim"><img src="images/1.jpg" alt=""></div>
+                <div class="anim"><img src="images/2.jpg" alt=""></div>
+                <div class="anim"><img src="images/3.jpg" alt=""></div>
+                <div class="anim"><img src="images/4.jpg" alt=""></div>
+                <div class="anim"><img src="images/5.jpg" alt=""></div>
+                <div class="anim"><img src="images/6.jpg" alt=""></div>
+                <div class="anim"><img src="images/7.jpg" alt=""></div>
+                <div class="anim"><img src="images/8.jpg" alt=""></div>
+                <div class="anim"><img src="images/9.jpg" alt=""></div>
+            </div>
+            <div class="tabs_conteiner">
+                <div class="tabs">
+				    <span class='tab'>Вкладка 1(LightBox)</span>
+				    <span class='tab'>Вкладка 2(ColorBox)</span>
+			    </div>
+			    <div class="tab_content">
+				    <div class="tab_item">
+					    <a href="images/1.jpg" data-lightbox="lbox"><img src="images/1.jpg"></a>
+					    <a href="images/2.jpg" data-lightbox="lbox"><img src="images/2.jpg"></a>
+					    <a href="images/3.jpg" data-lightbox="lbox"><img src="images/3.jpg"></a>
+					    <a href="images/4.jpg" data-lightbox="lbox"><img src="images/4.jpg"></a>
+				    </div>
+				    <div class="tab_item">
+					    <a class="group1" href="images/5.jpg"><img  src = "images/5.jpg"></a>
+					    <a class="group1" href="images/6.jpg"><img  src = "images/6.jpg"></a>
+                        <a class="group1" href="images/7.jpg"><img  src = "images/7.jpg"></a>
+                        <a class="group1" href="images/9.jpg"><img  src = "images/9.jpg"></a>
+				    </div>
+			    </div>
+            </div>
+        </div>
+        <div id="Footer">
+                <div class="foot">
+                    <article>Copyright 2020 Все права защищены</article>
+                </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    </body>
+</html>
