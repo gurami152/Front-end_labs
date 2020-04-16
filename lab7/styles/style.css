@@ -1,28 +1,15 @@
-html{
+html, body{
     
-    /*min-height:100%;
+    min-height:100%;
     width: 100%;
     margin: 0 0 0 0;
-    
-    padding: 0px;
-    margin: 0px;*/
-    height:100%;
 }
 
 body{
-    padding: 0px;
-    margin: 0px;
-    height: 100%;
-    background-color: #F6F662;
-}
-
-.container{
-    display:flex;
+    display: flex;
     flex-direction: column;
-    max-width: 1200px;
-    margin: 0px auto;
-    padding: 0px;
-    height: 100%;
+    height: 100vh;
+    background-color: #F6F662;
 }
 
 nav{
@@ -37,12 +24,10 @@ nav{
     background-color: #E6E617;
     color:#7B7B04;
     height: auto;
-    width: 100%;
 }
 
 #HeaderTitle{
     padding: 0px;
-    margin: 0px;
 }
 
 .LeftSide{
@@ -50,7 +35,7 @@ nav{
     font-size: 17px;
 }
 
-#HomeButton, #PhotoButton, #RozkladButton, #NewsButton, #InstagramButton, #YoutubeButton{
+#HomeButton, #PhotoButton, #RozkladButton, #NewsButton, #InstagramButton, #YoutubeButton ,#SliderButton{
     display:inline-block;
     vertical-align: top;
     height: 20px;
@@ -124,6 +109,10 @@ nav a {
     border-bottom-color: green;
 }
 
+#SliderButton:hover{
+    border-bottom-color: rgb(90, 9, 90);
+}
+
 #Footer a:hover,nav a:hover{
     background-color:#E6E617;;
     color:#7B7B04;
@@ -136,6 +125,7 @@ nav a {
 
 
 #Main{
+    flex: 1 0 auto;
     width: 80%;
     margin:0 auto;
     background-color: #F6F69C;
@@ -146,12 +136,6 @@ a {
     text-decoration: none;
     padding: 2px 1px 0; 
 }
-
-#page-wrap{
-    flex-grow:2;
-}
-
-
 
 a:link , a:visited{
     color: black;
@@ -172,6 +156,9 @@ margin:0;
     color:#7B7B04;
 }
 
+#Footer{
+    flex: 0 0 auto;
+}
 
 tr{
     width: 100%;
@@ -183,3 +170,35 @@ td img{
     width: 100%;
 }
 
+@media print {
+    .nextpage{
+      page-break-before: always;
+    }
+
+    nav{
+        display:none;
+    }
+    body{
+      margin:50px;
+      font-family:times, Georgia;
+      background-color: none;
+      width: auto;
+      height: auto;
+    }
+    .main{
+      border:none;
+    }
+    h1,h2,p,table,li{
+      color:#000000;
+      border-color: #000000;
+    }
+
+    #Footer{
+      display:none;
+    }
+    a:after{
+      content:" (" attr(href) ") ";
+      font-size: 90%;
+    }
+  
+  }
