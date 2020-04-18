@@ -148,6 +148,7 @@ margin:0;
 }
 
 .NewsObj{
+    display:block;
     margin:10px;
     height:100px;
 }
@@ -170,6 +171,20 @@ td img{
     width: 100%;
 }
 
+#YoutubeButton p , #InstagramButton p{
+    margin: 0;
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+@media all
+{
+.nextpage {
+  display:none;
+ }
+}
+
 @media print {
     .nextpage{
       page-break-before: always;
@@ -185,9 +200,7 @@ td img{
       width: auto;
       height: auto;
     }
-    .main{
-      border:none;
-    }
+
     h1,h2,p,table,li{
       color:#000000;
       border-color: #000000;
@@ -201,4 +214,68 @@ td img{
       font-size: 90%;
     }
   
+  }
+
+@media screen and (min-width:856px){
+    #YoutubeButton p, #InstagramButton p{
+        display:none;
+    }
+}
+
+
+@media screen and (max-width:611px){
+    .NewsObj img{
+        display:none;
+    }
+}
+
+@media screen and (max-width:855px) {
+    #mainmenu{
+        display:none;
+    }
+
+    .NewsObj{
+        font-size: 8pt;
+        padding-bottom: 20px;
+    }
+
+    .NewsObj a{
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .YoutubeImage ,.InstagramImage{
+        display:none;
+    }
+
+    nav{
+        display:block;
+        width:200px;
+        background-color:#7B7B04;
+        position:fixed;
+        left:-180px;
+        top:0;
+        margin:0;
+        padding: 0;
+        bottom:0;
+        transition: all ease 0.5s;
+    }
+    nav:hover{
+        left:0
+    }
+    nav:after{
+        display: block;
+        width: 20px;
+        height: 20px;
+        position:absolute;
+        right:0;
+        top:0;
+    }
+    #HomeButton, #PhotoButton, #RozkladButton, #NewsButton, #InstagramButton, #YoutubeButton ,#SliderButton{
+        float: right;
+        vertical-align: top;
+        text-align: center;
+        height: auto;
+        width: 200px;
+    }
   }
